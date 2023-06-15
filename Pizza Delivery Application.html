@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Delivery Application</title>
+  <style>
+    /* Reset default margin and padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Set a default font family and size */
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    /* Container styles */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* Pizza options styles */
+    .pizza-options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .pizza-option {
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #333;
+      cursor: pointer;
+    }
+
+    /* Checkout styles */
+    .checkout {
+      margin-top: 20px;
+    }
+
+    .checkout input[type="text"],
+    .checkout input[type="email"],
+    .checkout select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .checkout button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pizza Delivery Application</h1>
+
+    <h2>Select a Pizza</h2>
+    <div class="pizza-options">
+      <div class="pizza-option">
+        <h3>Margherita</h3>
+        <p>Tomato, mozzarella, basil</p>
+        <p>$10</p>
+      </div>
+      <div class="pizza-option">
+        <h3>Pepperoni</h3>
+        <p>Tomato, mozzarella, pepperoni</p>
+        <p>$12</p>
+      </div>
+      <div class="pizza-option">
+        <h3>Hawaiian</h3>
+        <p>Tomato, mozzarella, ham, pineapple</p>
+        <p>$11</p>
+      </div>
+      <div class="pizza-option">
+        <h3>Vegetarian</h3>
+        <p>Tomato, mozzarella, bell peppers, mushrooms, onions</p>
+        <p>$11</p>
+      </div>
+      <div class="pizza-option">
+        <h3>Meat Lover's</h3>
+        <p>Tomato, mozzarella, pepperoni, sausage, bacon</p>
+        <p>$13</p>
+      </div>
+    </div>
+
+    <div class="checkout">
+      <h2>Checkout</h2>
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <select>
+        <option value="delivery">Delivery</option>
+        <option value="pickup">Pickup</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </div>
